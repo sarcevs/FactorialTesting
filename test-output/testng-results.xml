@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="6" total="23" passed="17">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="177381" started-at="2022-03-20T20:21:10Z" finished-at="2022-03-20T20:24:07Z">
+    <groups>
+    </groups>
+    <test name="ChromeTestCases" duration-ms="177381" started-at="2022-03-20T20:21:10Z" finished-at="2022-03-20T20:24:07Z">
+      <class name="kriptomatDemo.FunctionalTests">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="init" is-config="true" duration-ms="1915" started-at="2022-03-20T21:22:18Z" finished-at="2022-03-20T21:22:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="calculateFactorialFaultNegativeInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNegativeInt" duration-ms="8111" started-at="2022-03-20T21:22:20Z" data-provider="getData3" finished-at="2022-03-20T21:22:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter an positive integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNegativeInt -->
+        <test-method status="FAIL" signature="calculateFactorialFaultNegativeInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNegativeInt" duration-ms="6671" started-at="2022-03-20T21:22:28Z" data-provider="getData3" finished-at="2022-03-20T21:22:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-12]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter an positive integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNegativeInt -->
+        <test-method status="FAIL" signature="calculateFactorialFaultNegativeInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNegativeInt" duration-ms="6558" started-at="2022-03-20T21:22:35Z" data-provider="getData3" finished-at="2022-03-20T21:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-28]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter an positive integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNegativeInt -->
+        <test-method status="FAIL" signature="calculateFactorialFaultNegativeInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNegativeInt" duration-ms="6554" started-at="2022-03-20T21:22:41Z" data-provider="getData3" finished-at="2022-03-20T21:22:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-171]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter an positive integer] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNegativeInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6588" started-at="2022-03-20T21:22:48Z" data-provider="getData2" finished-at="2022-03-20T21:22:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6559" started-at="2022-03-20T21:22:54Z" data-provider="getData2" finished-at="2022-03-20T21:23:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6642" started-at="2022-03-20T21:23:01Z" data-provider="getData2" finished-at="2022-03-20T21:23:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@#$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6593" started-at="2022-03-20T21:23:08Z" data-provider="getData2" finished-at="2022-03-20T21:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a3y78]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6554" started-at="2022-03-20T21:23:14Z" data-provider="getData2" finished-at="2022-03-20T21:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1.1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialFaultNonInt(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialFaultNonInt" duration-ms="6531" started-at="2022-03-20T21:23:21Z" data-provider="getData2" finished-at="2022-03-20T21:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[34.56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialFaultNonInt -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6508" started-at="2022-03-20T21:23:27Z" data-provider="getData1" finished-at="2022-03-20T21:23:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6545" started-at="2022-03-20T21:23:34Z" data-provider="getData1" finished-at="2022-03-20T21:23:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6517" started-at="2022-03-20T21:23:40Z" data-provider="getData1" finished-at="2022-03-20T21:23:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6543" started-at="2022-03-20T21:23:47Z" data-provider="getData1" finished-at="2022-03-20T21:23:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6531" started-at="2022-03-20T21:23:53Z" data-provider="getData1" finished-at="2022-03-20T21:24:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[170]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="calculateFactorialPositive(java.lang.String)[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="calculateFactorialPositive" duration-ms="6526" started-at="2022-03-20T21:24:00Z" data-provider="getData1" finished-at="2022-03-20T21:24:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[175]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateFactorialPositive -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:kriptomatDemo.FunctionalTests@1324409e]" name="tearDown" is-config="true" duration-ms="785" started-at="2022-03-20T21:24:06Z" finished-at="2022-03-20T21:24:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- kriptomatDemo.FunctionalTests -->
+      <class name="kriptomatDemo.VerifyWebElements">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="init" is-config="true" duration-ms="6446" started-at="2022-03-20T21:21:10Z" finished-at="2022-03-20T21:21:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="verifyCalculateButton()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyCalculateButton" duration-ms="8999" started-at="2022-03-20T21:21:16Z" finished-at="2022-03-20T21:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCalculateButton -->
+        <test-method status="PASS" signature="verifyMainHeader()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyMainHeader" duration-ms="7408" started-at="2022-03-20T21:21:25Z" finished-at="2022-03-20T21:21:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMainHeader -->
+        <test-method status="PASS" signature="verifyOtherLinks()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyOtherLinks" duration-ms="12018" started-at="2022-03-20T21:21:33Z" finished-at="2022-03-20T21:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOtherLinks -->
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyPageTitle" duration-ms="7679" started-at="2022-03-20T21:21:45Z" finished-at="2022-03-20T21:21:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="verifyPlaceholderText()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyPlaceholderText" duration-ms="7420" started-at="2022-03-20T21:21:52Z" finished-at="2022-03-20T21:22:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPlaceholderText -->
+        <test-method status="FAIL" signature="verifyPrivacyLink()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyPrivacyLink" duration-ms="8602" started-at="2022-03-20T21:22:00Z" finished-at="2022-03-20T21:22:08Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://qainterview.pythonanywhere.com/privacy] but found [https://qainterview.pythonanywhere.com/terms]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://qainterview.pythonanywhere.com/privacy] but found [https://qainterview.pythonanywhere.com/terms]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.VerifyWebElements.verifyPrivacyLink(VerifyWebElements.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyLink -->
+        <test-method status="FAIL" signature="verifyTermsLink()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="verifyTermsLink" duration-ms="8669" started-at="2022-03-20T21:22:08Z" finished-at="2022-03-20T21:22:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://qainterview.pythonanywhere.com/terms] but found [https://qainterview.pythonanywhere.com/privacy]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://qainterview.pythonanywhere.com/terms] but found [https://qainterview.pythonanywhere.com/privacy]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.VerifyWebElements.verifyTermsLink(VerifyWebElements.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:kriptomatDemo.VerifyWebElements@180bc464]" name="tearDown" is-config="true" duration-ms="839" started-at="2022-03-20T21:22:17Z" finished-at="2022-03-20T21:22:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- kriptomatDemo.VerifyWebElements -->
+    </test> <!-- ChromeTestCases -->
+  </suite> <!-- Suite -->
+</testng-results>

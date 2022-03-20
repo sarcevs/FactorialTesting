@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>F:\Selenium\workspace\QAInterview\crossbrowser.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods, 6 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNegativeInt(-1)">calculateFactorialFaultNegativeInt(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNegativeInt(-28)">calculateFactorialFaultNegativeInt(-28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNegativeInt(-171)">calculateFactorialFaultNegativeInt(-171)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNegativeInt(-12)">calculateFactorialFaultNegativeInt(-12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyPrivacyLink">verifyPrivacyLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyTermsLink">verifyTermsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(34.56)">calculateFactorialFaultNonInt(34.56)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(abc)">calculateFactorialFaultNonInt(abc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(a)">calculateFactorialFaultNonInt(a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(a3y78)">calculateFactorialFaultNonInt(a3y78)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(@#$)">calculateFactorialFaultNonInt(@#$)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialFaultNonInt(1.1)">calculateFactorialFaultNonInt(1.1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(12)">calculateFactorialPositive(12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(100)">calculateFactorialPositive(100)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(175)">calculateFactorialPositive(175)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(0)">calculateFactorialPositive(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(170)">calculateFactorialPositive(170)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.FunctionalTests" hash-for-method="calculateFactorialPositive(1)">calculateFactorialPositive(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyCalculateButton">verifyCalculateButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyMainHeader">verifyMainHeader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyOtherLinks">verifyOtherLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyPageTitle">verifyPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="kriptomatDemo.VerifyWebElements" hash-for-method="verifyPlaceholderText">verifyPlaceholderText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">kriptomatDemo.FunctionalTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNegativeInt(-1)">
+                  </a> <!-- calculateFactorialFaultNegativeInt(-1) -->
+                  <span class="method-name">calculateFactorialFaultNegativeInt</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNegativeInt(-28)">
+                  </a> <!-- calculateFactorialFaultNegativeInt(-28) -->
+                  <span class="method-name">calculateFactorialFaultNegativeInt</span>
+                  <span class="parameters">(-28)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNegativeInt(-171)">
+                  </a> <!-- calculateFactorialFaultNegativeInt(-171) -->
+                  <span class="method-name">calculateFactorialFaultNegativeInt</span>
+                  <span class="parameters">(-171)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNegativeInt(-12)">
+                  </a> <!-- calculateFactorialFaultNegativeInt(-12) -->
+                  <span class="method-name">calculateFactorialFaultNegativeInt</span>
+                  <span class="parameters">(-12)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Please enter an positive integer] but found []
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.FunctionalTests.calculateFactorialFaultNegativeInt(FunctionalTests.java:156)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">kriptomatDemo.VerifyWebElements</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPrivacyLink">
+                  </a> <!-- verifyPrivacyLink -->
+                  <span class="method-name">verifyPrivacyLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://qainterview.pythonanywhere.com/privacy] but found [https://qainterview.pythonanywhere.com/terms]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.VerifyWebElements.verifyPrivacyLink(VerifyWebElements.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTermsLink">
+                  </a> <!-- verifyTermsLink -->
+                  <span class="method-name">verifyTermsLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [https://qainterview.pythonanywhere.com/terms] but found [https://qainterview.pythonanywhere.com/privacy]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at kriptomatDemo.VerifyWebElements.verifyTermsLink(VerifyWebElements.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">kriptomatDemo.FunctionalTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(34.56)">
+                  </a> <!-- calculateFactorialFaultNonInt(34.56) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(34.56)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(abc)">
+                  </a> <!-- calculateFactorialFaultNonInt(abc) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(abc)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(a)">
+                  </a> <!-- calculateFactorialFaultNonInt(a) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(a)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(a3y78)">
+                  </a> <!-- calculateFactorialFaultNonInt(a3y78) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(a3y78)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(@#$)">
+                  </a> <!-- calculateFactorialFaultNonInt(@#$) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(@#$)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialFaultNonInt(1.1)">
+                  </a> <!-- calculateFactorialFaultNonInt(1.1) -->
+                  <span class="method-name">calculateFactorialFaultNonInt</span>
+                  <span class="parameters">(1.1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(12)">
+                  </a> <!-- calculateFactorialPositive(12) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(100)">
+                  </a> <!-- calculateFactorialPositive(100) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(100)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(175)">
+                  </a> <!-- calculateFactorialPositive(175) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(175)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(0)">
+                  </a> <!-- calculateFactorialPositive(0) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(170)">
+                  </a> <!-- calculateFactorialPositive(170) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(170)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="calculateFactorialPositive(1)">
+                  </a> <!-- calculateFactorialPositive(1) -->
+                  <span class="method-name">calculateFactorialPositive</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">kriptomatDemo.VerifyWebElements</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCalculateButton">
+                  </a> <!-- verifyCalculateButton -->
+                  <span class="method-name">verifyCalculateButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMainHeader">
+                  </a> <!-- verifyMainHeader -->
+                  <span class="method-name">verifyMainHeader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOtherLinks">
+                  </a> <!-- verifyOtherLinks -->
+                  <span class="method-name">verifyOtherLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitle">
+                  </a> <!-- verifyPageTitle -->
+                  <span class="method-name">verifyPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPlaceholderText">
+                  </a> <!-- verifyPlaceholderText -->
+                  <span class="method-name">verifyPlaceholderText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\Selenium\workspace\QAInterview\crossbrowser.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;2&quot; name=&quot;Suite&quot;&gt;
+  &lt;test name=&quot;ChromeTestCases&quot;&gt;
+    &lt;parameter name=&quot;faultsNegativeInt&quot; value=&quot;-1, -12, -28, -171&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;numbers&quot; value=&quot;0, 1, 12, 100, 170, 175&quot;/&gt;
+    &lt;parameter name=&quot;faultsNonInt&quot; value=&quot;a, abc, @#$, a3y78, 1.1, 34.56&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;kriptomatDemo.VerifyWebElements&quot;/&gt;
+      &lt;class name=&quot;kriptomatDemo.FunctionalTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ChromeTestCases --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ChromeTestCases (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyOtherLinks')
+data.setCell(0, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(0, 3, 12018);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyCalculateButton')
+data.setCell(1, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(1, 3, 8999);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyTermsLink')
+data.setCell(2, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(2, 3, 8669);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyPrivacyLink')
+data.setCell(3, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(3, 3, 8602);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'calculateFactorialFaultNegativeInt')
+data.setCell(4, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(4, 3, 8111);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyPageTitle')
+data.setCell(5, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(5, 3, 7679);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyPlaceholderText')
+data.setCell(6, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(6, 3, 7420);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyMainHeader')
+data.setCell(7, 2, 'kriptomatDemo.VerifyWebElements')
+data.setCell(7, 3, 7408);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'calculateFactorialFaultNegativeInt')
+data.setCell(8, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(8, 3, 6671);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'calculateFactorialFaultNonInt')
+data.setCell(9, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(9, 3, 6642);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'calculateFactorialFaultNonInt')
+data.setCell(10, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(10, 3, 6593);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'calculateFactorialFaultNonInt')
+data.setCell(11, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(11, 3, 6588);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'calculateFactorialFaultNonInt')
+data.setCell(12, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(12, 3, 6559);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'calculateFactorialFaultNegativeInt')
+data.setCell(13, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(13, 3, 6558);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'calculateFactorialFaultNonInt')
+data.setCell(14, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(14, 3, 6554);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'calculateFactorialFaultNegativeInt')
+data.setCell(15, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(15, 3, 6554);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'calculateFactorialPositive')
+data.setCell(16, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(16, 3, 6545);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'calculateFactorialPositive')
+data.setCell(17, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(17, 3, 6543);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'calculateFactorialFaultNonInt')
+data.setCell(18, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(18, 3, 6531);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'calculateFactorialPositive')
+data.setCell(19, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(19, 3, 6531);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'calculateFactorialPositive')
+data.setCell(20, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(20, 3, 6526);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'calculateFactorialPositive')
+data.setCell(21, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(21, 3, 6517);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'calculateFactorialPositive')
+data.setCell(22, 2, 'kriptomatDemo.FunctionalTests')
+data.setCell(22, 3, 6508);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">kriptomatDemo.VerifyWebElements</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyCalculateButton</span>
+                <span class="method-start">6457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyMainHeader</span>
+                <span class="method-start">15458 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyOtherLinks</span>
+                <span class="method-start">22868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPageTitle</span>
+                <span class="method-start">34888 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPlaceholderText</span>
+                <span class="method-start">42569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPrivacyLink</span>
+                <span class="method-start">49991 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyTermsLink</span>
+                <span class="method-start">58595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67266 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">kriptomatDemo.FunctionalTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init(chrome)</span>
+                <span class="method-start">68108 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calculateFactorialFaultNegativeInt(-1)</span>
+                <span class="method-start">70026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calculateFactorialFaultNegativeInt(-12)</span>
+                <span class="method-start">78139 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calculateFactorialFaultNegativeInt(-28)</span>
+                <span class="method-start">84811 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calculateFactorialFaultNegativeInt(-171)</span>
+                <span class="method-start">91371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(a)</span>
+                <span class="method-start">97927 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(abc)</span>
+                <span class="method-start">104517 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(@#$)</span>
+                <span class="method-start">111077 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(a3y78)</span>
+                <span class="method-start">117720 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(1.1)</span>
+                <span class="method-start">124315 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialFaultNonInt(34.56)</span>
+                <span class="method-start">130870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(0)</span>
+                <span class="method-start">137403 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(1)</span>
+                <span class="method-start">143913 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(12)</span>
+                <span class="method-start">150460 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(100)</span>
+                <span class="method-start">156978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(170)</span>
+                <span class="method-start">163522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calculateFactorialPositive(175)</span>
+                <span class="method-start">170054 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">176581 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

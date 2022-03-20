@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" verbose="2">
+
+  <test name="ChromeTestCases">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="numbers" value="0, 1, 12, 100, 170, 175"/>
+    <parameter name="faultsNonInt" value="a, abc, @#$, a3y78, 1.1, 34.56"/>
+    <parameter name="faultsNegativeInt" value="-1, -12, -28, -171"/>
+    <classes>
+      <class name="kriptomatDemo.VerifyWebElements">
+      </class>
+      <class name="kriptomatDemo.FunctionalTests">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="ChromeTestCases">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="numbers" value="0, 1, 12, 100, 170, 175"/>
+    <parameter name="faultsNonInt" value="a, abc, @#$, a3y78, 1.1, 34.56"/>
+    <parameter name="faultsNegativeInt" value="-1, -12, -28, -171"/>
+    <classes>
+      <class name="kriptomatDemo.VerifyWebElements">
+      </class>
+      <class name="kriptomatDemo.FunctionalTests">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="ChromeTestCases">
+    <parameter name="browser" value="edge"/>
+    <parameter name="numbers" value="0, 1, 12, 100, 170, 175"/>
+    <parameter name="faultsNonInt" value="a, abc, @#$, a3y78, 1.1, 34.56"/>
+    <parameter name="faultsNegativeInt" value="-1, -12, -28, -171"/>
+    <classes>
+      <class name="kriptomatDemo.VerifyWebElements">
+      </class>
+      <class name="kriptomatDemo.FunctionalTests">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+   
+</suite> <!-- Suite -->
