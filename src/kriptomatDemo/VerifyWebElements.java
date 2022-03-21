@@ -18,7 +18,7 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Check the title of the webpage
 	    String title = driver.getTitle();
@@ -38,7 +38,7 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Check the main header text
 	    String header = driver.findElement(By.xpath("/html/body/div[1]/div[1]/div/h1")).getText();
@@ -58,7 +58,7 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Check the button existence
 	    String button = driver.findElement(By.xpath("//*[@id='getFactorial']")).getText();
@@ -78,7 +78,7 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Check the Placeholder Text existence
 	    String placeholder = driver.findElement(By.xpath("//*[@id='number']")).getAttribute("placeholder");
@@ -98,11 +98,11 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find Privacy link and click on it
 	    driver.findElement(By.xpath("/html/body/div[2]/div/p[1]/a[2]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(2000);
 	    
 	    String url = driver.getCurrentUrl(); // Store the actual url
 		// Test Step 4: Check the Privacy link
@@ -122,11 +122,11 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find Terms and Conditions link and click on it
 	    driver.findElement(By.xpath("/html/body/div[2]/div/p[1]/a[1]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(2000);
 	    
 	    String url = driver.getCurrentUrl(); // Store the actual url
 
@@ -147,11 +147,11 @@ public class VerifyWebElements extends BaseTest
         
 		// Test Step 2: Enter Internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find Other link/links and click on it
 	    driver.findElement(By.xpath("/html/body/div[2]/div/p[2]/a")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(2000);
 	    
 	    String url = driver.getCurrentUrl(); // Store the actual url
 

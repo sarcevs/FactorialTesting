@@ -26,7 +26,7 @@ public class FunctionalTests extends BaseTest
         
 		// Test Step 2: Enter internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find the 'number' text field and enter a positive integer number
 	    driver.findElement(By.xpath("//input[@name='number']")).sendKeys(numberForCalc);
@@ -100,7 +100,7 @@ public class FunctionalTests extends BaseTest
         
 		// Test Step 2: Enter internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find the 'number' text field and enter a non-integer number
 	    driver.findElement(By.xpath("//input[@name='number']")).sendKeys(faultValueNonInt);
@@ -140,7 +140,7 @@ public class FunctionalTests extends BaseTest
         
 		// Test Step 2: Enter internet address into the browser
 		driver.get("https://qainterview.pythonanywhere.com/");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		
 		// Test Step 3: Find the 'number' text field and enter a negative integer number
 	    driver.findElement(By.xpath("//input[@name='number']")).sendKeys(faultValueNegativeInt);
